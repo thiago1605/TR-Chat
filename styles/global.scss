@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+
+  ::-webkit-scrollbar {
+    width: 0.35rem;
+    @media screen {
+      @media (max-width: 1300px) {
+        width: 0.1rem;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #1c1c1c;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #b6e5f7;
+    border-radius: 15px;
+  }
+
+  ::selection {
+    background-color: #f0f8ff;
+    color: #000;
+  }
+}
+
+:root {
+  --bg-color-blue-50: #a7bcff;
+  --bg-color-blue-100: #7b96ec;
+  --bg-color-blue-200: #5d5b8d;
+  --color-blue-80: #8da4f1;
+  --color-blue-900: #3e3c61;
+  --color-blue-950: #2f2d52;
+  --placeholder-color-gray-50: #afafaf;
+  --color-white-400: #ddddf7;
+}
+
+.blurEffect {
+  background: #00000066;
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

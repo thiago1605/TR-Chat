@@ -1,0 +1,112 @@
+.divImgMessage {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+
+.containerAll {
+  .unread_Messages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background-color: #3e9dc0;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    font-size: larger;
+    font-weight: bold;
+    color: #fff;
+
+    margin: -12px;
+  }
+}
+
+.container {
+  @media screen {
+    @media (max-width: 1300px) {
+      margin-bottom: 1rem;
+      background-color: #14141420;
+      box-shadow: 0 0 4px 0.1px #1c1d1d;
+      height: 4rem;
+    }
+  }
+
+  margin-bottom: 1.6875rem;
+  padding: 0 0 0 0.625rem;
+  height: 4.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.625rem;
+  color: #b6e5f7;
+  cursor: pointer;
+  background-color: #141414;
+  border-radius: 0.625rem;
+  border-top-left-radius: 0;
+
+  &:hover {
+    box-shadow: 0 0 10px 1px #89d5f0;
+    transition: 0.2s ease;
+  }
+
+  img {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  div:last-child {
+    @media screen {
+      @media (max-width: 1300px) {
+        border-radius: 0;
+        margin-left: 1rem;
+      }
+    }
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0 0.625rem 0.625rem 0;
+
+    div {
+      @media screen {
+        @media (max-width: 1300px) {
+          width: 60px;
+        }
+      }
+      background-color: #b6e5f7;
+      width: 50px;
+      height: 100%;
+      color: #000;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: x-large;
+    }
+  }
+}
+
+.centerDiv {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 1.125rem;
+    font-weight: 500;
+    max-width: 7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  small {
+    font-size: 0.875rem;
+    color: #d3d3d3;
+    white-space: nowrap;
+    max-width: 6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

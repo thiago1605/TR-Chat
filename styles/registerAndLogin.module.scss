@@ -1,0 +1,241 @@
+.containerSection {
+  background: fixed
+    url("https://i.pinimg.com/564x/17/4c/d6/174cd6ddd283d19164cf03b0c29a09b4.jpg")
+    center center;
+  background-repeat: repeat-x;
+  background-size: contain;
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gifForm {
+  @media screen {
+    @media (max-width: 1300px) {
+      height: 100vh;
+      width: 100vw;
+      padding: 0;
+    }
+  }
+  background-color: #000;
+  padding: 4rem 100px 4rem 0;
+  display: flex;
+  align-items: center;
+
+  border-radius: 0.8rem;
+
+  .imageVortex {
+    @media screen {
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
+    background-image: url("/images/artificial_intelligence.gif");
+    background-size: 60rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    object-fit: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 550px;
+    padding: 16rem 0;
+  }
+}
+
+.formLogin {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer {
+  @media screen {
+    @media (max-width: 1300px) {
+      border-radius: 0;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  img {
+    box-shadow: 0 0 10px 1px #89d5f0;
+  }
+
+  box-shadow: 0 0 10px 1px #89d5f0;
+
+  background-color: #141414;
+  padding: 1.25rem 3.75rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+
+  span:first-child {
+    color: #b6e5f7;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  span:nth-child(2) {
+    color: #b6e5f7;
+    font-size: 0.75rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+
+    .input {
+      border-radius: 0.5rem;
+      background-color: #3c3c3c;
+      color: white;
+      width: 18rem;
+      padding: 0.93rem;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        color: var(--placeholder-color-gray-50);
+      }
+
+      &:focus {
+        box-shadow: 0 0 10px 1px #89d5f0;
+        transition: 0.2s ease;
+      }
+    }
+
+    small {
+      margin-top: -0.4rem;
+      padding: 0.05rem 0.5rem;
+      font-size: 100;
+      background-color: red;
+      border-radius: 0.15rem;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.7rem;
+      width: fit-content;
+    }
+
+    button {
+      background-color: #205461;
+      color: #fff;
+      padding: 0.93rem;
+      font-weight: bold;
+      border: none;
+      margin-top: 0.7rem;
+      cursor: pointer;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background-color: #89d5f0;
+        color: #141414;
+        box-shadow: 0 0 10px 1px #89d5f0;
+
+        transition: 0.5s ease;
+      }
+    }
+  }
+
+  small {
+    color: #b6e5f7;
+    font-size: 0.75rem;
+    margin-top: 0.625rem;
+  }
+}
+
+.inputError {
+  background-color: #3c3c3c;
+  border-radius: 0.5rem;
+  color: #fff;
+  width: 18rem;
+  padding: 0.93rem;
+  border: none;
+  outline: none;
+
+  box-shadow: 0 0 10px 1px red;
+  transition: 0.2s ease;
+
+  &::placeholder {
+    color: #ff0000;
+  }
+}
+
+.userImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--color-blue-80);
+  font-size: 0.75rem;
+  cursor: pointer;
+  background-color: transparent;
+
+  span {
+    position: relative;
+
+    img {
+      object-fit: cover;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.userGeneric {
+  font-size: 150px;
+  color: #ccc;
+}
+
+.hover {
+  &:hover::after {
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    content: "Change image";
+    font-size: medium;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #71717198;
+    color: White;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.hoverUser {
+  &::after {
+    background-color: #b6e5f7;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    content: url("/images/addImage.png");
+    font-size: medium;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: White;
+
+    bottom: 0;
+    right: 0;
+  }
+}

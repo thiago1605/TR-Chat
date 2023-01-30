@@ -1,0 +1,28 @@
+.home {
+  //background-color: var(--bg-color-blue-50);
+  background: url("https://i.pinimg.com/564x/17/4c/d6/174cd6ddd283d19164cf03b0c29a09b4.jpg")
+    center center;
+  background-color: #090909;
+  background-repeat: repeat-x;
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 85%;
+    height: 90%;
+    border-radius: 1.0625rem;
+    display: flex;
+    overflow: hidden;
+
+    @media screen {
+      @media (max-width: 1300px) {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+      }
+    }
+  }
+}
