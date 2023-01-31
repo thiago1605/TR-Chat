@@ -1,0 +1,46 @@
+.messages {
+  background-color: #090909;
+
+  background: linear-gradient(#090909cf, #090909cf), url("/images/bc.jpg"),
+    repeat-x, center center;
+  background-size: contain;
+
+  padding: 2rem;
+  height: calc(100% - 14.7625rem);
+  overflow-y: scroll;
+
+  @media screen {
+    @media (max-width: 1300px) {
+      height: calc(100% - 10rem);
+      padding: 1rem;
+
+      background-size: cover;
+    }
+  }
+}
+
+.trChat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1c1c1c;
+  background: #090909;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    div {
+      font-size: 200px;
+    }
+  }
+}

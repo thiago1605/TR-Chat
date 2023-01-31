@@ -1,0 +1,122 @@
+.message {
+  @media screen {
+    @media (max-width: 1300px) {
+      gap: 0rem;
+    }
+  }
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  &.owner {
+    flex-direction: row-reverse;
+
+    div:nth-child(2) {
+      align-items: flex-end;
+
+      img {
+        border-radius: 0.625rem 0 0.625rem 0.625rem;
+      }
+
+      p {
+        background-color: #205461;
+        color: #fff;
+        border-radius: 0.625rem 0 0.625rem 0.625rem;
+      }
+      .time {
+        @media screen {
+          @media (max-width: 1300px) {
+            display: inline;
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+}
+
+.time {
+  font-size: small;
+}
+
+.firstDiv {
+  display: flex;
+  flex-direction: column;
+  color: #808080;
+  font-weight: 300;
+  align-items: center;
+
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  time {
+    text-align: center;
+    font-size: small;
+  }
+}
+
+.messageIMG_Container {
+  @media screen {
+    @media (max-width: 1300px) {
+      gap: 0rem;
+      align-items: flex-start;
+    }
+  }
+
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  p {
+    @media screen {
+      @media (max-width: 599px) {
+        max-width: 14rem;
+        margin-bottom: 0.3rem;
+      }
+      @media (min-width: 600px) {
+        max-width: 18rem;
+        margin-bottom: 0.3rem;
+      }
+      @media (min-width: 1000px) {
+        max-width: 25rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+
+    background-color: #272727;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0 0.625rem 0.625rem 0.625rem;
+    max-width: 16rem;
+    word-break: break-word;
+    box-shadow: 0 0 5px 0.1px #00000021;
+    color: #fff;
+  }
+
+  img {
+    @media screen {
+      @media (max-width: 599px) {
+        width: 14rem;
+        height: auto;
+        margin-bottom: 0.3rem;
+      }
+      @media (min-width: 600px) {
+        width: 18rem;
+        height: auto;
+        margin-bottom: 0.3rem;
+      }
+      @media (min-width: 1000px) {
+        max-width: 25rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+
+    width: 16rem;
+    border-radius: 0 0.625rem 0.625rem 0.625rem;
+    box-shadow: 0 0 3px 0.1px #00000021;
+  }
+}
