@@ -3,7 +3,7 @@ import "../styles/global.scss";
 import type { AppProps } from "next/app";
 import { AuthContextProvider } from "../context/AuthContext";
 import { useRouter } from "next/router";
-import { AuthRequired } from "./components/ProtectedRoute/AuthRequired";
+import { AuthRequired } from "../components/ProtectedRoute/AuthRequired";
 import { ChatContextProvider } from "../context/ChatContext";
 
 const noAuthRequired: string[] = ["/login", "/register"];

@@ -5,7 +5,7 @@ import { NextRouter, useRouter } from "next/router";
 import { useAuth } from "../context/AuthContext";
 import { FieldValues } from "react-hook-form";
 import { useChat } from "../context/ChatContext";
-import { useLoginFormValidate } from "./hooks/useFormValidate";
+import { useLoginFormValidate } from "../hooks/useFormValidate";
 import { FirebaseError } from "firebase/app";
 import { UserCredential } from "firebase/auth";
 
@@ -20,7 +20,6 @@ const useHandleFirebaseLogin = () => {
     [authError, setAuthError] = useState<FirebaseAuthErrors_Props>(),
     router: NextRouter = useRouter(),
     { handleSubmit, register, displayLoginError } = useLoginFormValidate();
-    
 
   const { dispatch, setIsPermitted } = useChat();
 
@@ -47,7 +46,6 @@ const useHandleFirebaseLogin = () => {
           setTimeout(() => {
             router.push("/");
           }, 4000);
-          
         }
       })
       .catch(({ code }: FirebaseError) => {

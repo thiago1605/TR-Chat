@@ -1,8 +1,8 @@
 import styles from "../styles/home.module.scss";
-import { Sidebar } from "./components/Sidebar";
-import { Chat } from "./components/Chat";
-import { Search } from "./components/Search";
-import { Chats } from "./components/Chats";
+import { Sidebar } from "../components/Sidebar";
+import { Chat } from "../components/Chat";
+import { Search } from "../components/Search";
+import { Chats } from "../components/Chats";
 import "bootstrap/dist/css/bootstrap.css";
 import Carousel from "react-bootstrap/Carousel";
 import { useEffect, useState } from "react";

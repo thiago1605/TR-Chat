@@ -8,7 +8,7 @@ import { db, storage } from "../config/firebaseClient";
 import { updateProfile, UserCredential } from "firebase/auth";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
-import { useRegisterFormValidate } from "./hooks/useFormValidate";
+import { useRegisterFormValidate } from "../hooks/useFormValidate";
 import { useAuth } from "../context/AuthContext";
 import { FaUserCircle } from "react-icons/fa";
 
